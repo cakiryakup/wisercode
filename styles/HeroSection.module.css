@@ -1,0 +1,104 @@
+.section {
+  height: 100vh;
+  overflow-x: hidden !important;
+  width: 100%;
+  background-image: url("/grid-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.shadow {
+  width: 200px;
+  height: 200px;
+  background: #afc170;
+  border-radius: 50%;
+  filter: blur(65px);
+  z-index: 2;
+  position: absolute;
+  top: 90px;
+  right: -0px;
+  overflow: hidden;
+  animation: shadow ease-in-out 6s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+}
+
+@keyframes shadow {
+  0% {
+    top: 90px;
+    right: -0px;
+  }
+  25% {
+    top: 110px;
+    right: 10px;
+  }
+  50% {
+    top: 85px;
+    right: 15px;
+  }
+  75% {
+    top: 95px;
+    right: 10px;
+  }
+  100% {
+    top: 90px;
+    right: -0px;
+  }
+}
+
+.h1 {
+  cursor: default;
+  margin-left: 3rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.h2 {
+  cursor: default;
+  margin-left: 3rem;
+  margin-top: -1.5rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.buttons {
+  margin-top: 10px;
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link_f {
+  transition: 0.5s;
+  padding: 12px 24px;
+  color: #242529;
+  border-radius: 10px;
+  background-color: #afc170;
+}
+.link {
+  transition: 0.5s;
+  padding: 12px 24px;
+  margin-left: 1.5rem;
+  border-radius: 10px;
+  color: #afc170;
+  background: rgba(175, 193, 112, 0.15);
+}
+
+.link:hover {
+  transition: 0.5s;
+  transform: translateY(-2px);
+  color: #a5b766;
+  background: rgba(175, 193, 112, 0.3);
+}
+
+.link_f:hover {
+  transition: 0.5s;
+  transform: translateY(-2px);
+  background-color: #a5b766;
+}
